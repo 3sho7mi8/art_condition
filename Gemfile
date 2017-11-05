@@ -19,6 +19,8 @@ group :development, :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'sqlite3'
+  gem "pry-byebug"
+  gem "pry-rails"
 end
 
 group :development do
