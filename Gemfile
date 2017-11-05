@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'rails'
-gem 'sqlite3'
+gem "pg"
 gem 'puma'
 gem 'sass-rails'
 gem 'uglifier'
@@ -18,6 +18,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara'
   gem 'selenium-webdriver'
+  gem 'sqlite3'
 end
 
 group :development do
