@@ -1,7 +1,6 @@
-require 'test_helper'
+require "test_helper"
 
 class GalleryTest < ActiveSupport::TestCase
-
   def setup
     note_text = <<~EOM
       Location is Japan.
@@ -9,7 +8,7 @@ class GalleryTest < ActiveSupport::TestCase
       But this gallery is for testing.
       do not exist.
     EOM
-    @gallery = Gallery.new(name: 'Example Gallery', note: note_text)
+    @gallery = Gallery.new(name: "Example Gallery", note: note_text)
   end
 
   test "should be valid" do
