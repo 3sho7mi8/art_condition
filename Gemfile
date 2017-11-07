@@ -29,6 +29,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen'
   gem "guard-livereload", require: false
+  gem 'rubocop', require: false
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
