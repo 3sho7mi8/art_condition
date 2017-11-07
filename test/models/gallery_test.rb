@@ -2,13 +2,7 @@ require "test_helper"
 
 class GalleryTest < ActiveSupport::TestCase
   def setup
-    note_text = <<~EOM
-      Location is Japan.
-      There is a tradition since 1900.
-      But this gallery is for testing.
-      do not exist.
-    EOM
-    @gallery = Gallery.new(name: "Example Gallery", note: note_text)
+    @gallery = galleries(:gallery_01)
   end
 
   test "should be valid" do
